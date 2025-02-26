@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,14 +10,238 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
- 
+    <style>
+      body {
+        font-family: "calibri";
+        background-color: #f8f9fa;
+        padding: 20px;
+        font-size: 11px;
+      }
+      @media print {
+  input[type="text"]{
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .btn-secondary {
+    display: none !important; 
+  }
+}
+
+      .invoice-container {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 21cm;
+        height: 27.3cm;
+        margin: auto;
+      }
+      .invoice-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 5px;
+      }
+      .company-details {
+        width: 80%;
+        margin-left: -2%;
+      }
+      .company-details h2 {
+        font-weight: bold;
+        font-size: 27px;
+        margin-bottom: -3px;
+      }
+      .company-details p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      .invoice-number {
+        text-align: center;
+        font-size: 0.9rem;
+        width: 19%;
+      }
+      .invoice-number h4 {
+        font-weight: bold;
+      }
+      .date-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .form-check-input[type=checkbox]{
+    border: 1px solid #000;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .date-box {
+    border: 1px solid #000;
+    border-bottom: none;
+  
+  }
+  .date-box label {
+    margin-left: 10px;
+    position: relative;
+    padding-right: 15px;
+    font-weight: bold;
+  }
+
+  /* Vertical line after the Date: text */
+  .date-box label::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -2px;
+    width: 1px;
+    height: 20px;
+    background-color: #000;
+  }
+
+  .form-control {
+    display: block;
+    width: 50%;
+    padding: .375rem .75rem;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.5; 
+    margin-left: 10px;
+}
+.form-section {
+    border: 1px solid #000;
+    padding: 3px 0 0px 10px;
+}
+      .form-section1 {
+        border: 1px solid #000;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+      .section-title {
+        margin-bottom: 2px;
+        font-size: 11px;
+        font-weight: bold;
+      }
+      table {
+        height: 0.5cm;
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+      .table td,
+      .table th {
+        padding: 0%;
+        height: 0.5cm;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid #000;
+      }
+      th:nth-child(1),
+      td:nth-child(1) {
+        width: 40%;
+      }
+      th:nth-child(2),
+      td:nth-child(2),
+      th:nth-child(3),
+      td:nth-child(3),
+      th:nth-child(4),
+      td:nth-child(4) {
+        width: 10%;
+      }
+      /* VAT Sales Section Enhancements */
+.vat-sales-table td,
+.vat-sales-table th {
+  height: 1cm;
+  text-align: right;
+  vertical-align: middle;
+  border: 1.5px solid #000;
+  padding-right: 15px;
+  font-size: 0.9rem;
+}
+
+.vat-sales-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  text-align: center;
+}
+
+.vat-sales-container {
+  border: 2px solid #000;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.vat-sales-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+.table1{
+  text-align: right;
+    font-size: 11px;
+    width: 55%;
+}
+  .table1  th:nth-child(1),
+      td:nth-child(1) {
+        width: 5%;
+      }
+      .table2{
+        margin-left: 20%;
+    text-align: right;
+    font-size: 11px;
+    width: 80%;
+}
+  .table2  th:nth-child(1),
+      td:nth-child(1) {
+        width: 10%;
+      }
+      
+      .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 3em;
+    margin-bottom: 2.125rem;
+}
+.form-section1 input {
+        height: 0.5cm;
+        font-family: "Calibri";
+        font-size: 11px;
+        width: 70%;
+        border: none;
+        outline: none;
+      }
+      .table td input {
+        height: 0.5cm;
+        font-family: "Calibri";
+        font-size: 11px;
+        border: none;
+     outline: none;
+      }
+      .form-control,
+      input[type="text"],
+      input[type="date"] {
+        border: none;
+     outline: none;
+        height: 0.5cm;
+        width: 70%;
+        font-family: "Calibri";
+        font-size: 11px;
+      }
+      .info{
+        margin-bottom: 4px!important;
+      }
+
+    </style>
   </head>
   <body>
     <div class="invoice-container">
       <div class="invoice-header">
         <div>
-          <img src="NGSI_logo.jpg" alt="Company Logo" style="height: 125px" />
+          <img src="/assets/images/NGSI_logo.jpg" alt="Company Logo" style="height: 125px" />
         </div>
         <div class="company-details">
           <h2>NETGLOBAL SOLUTIONS, INC.</h2>
@@ -33,10 +258,10 @@
       </div>
       <div class="date-form-container">
         <div class="col-md-6">
-          <label class="form-check-label" style="   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 16px;"
+          <label class="form-check-label"
             ><input type="checkbox" class="form-check-input" /> CASH SALES</label
           ><br />
-          <label class="form-check-label"style="   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 16px;"
+          <label class="form-check-label"
             ><input type="checkbox" class="form-check-input" /> CHARGE SALES</label
           >
         </div>
@@ -51,9 +276,9 @@
           <h6 class="section-title">SOLD TO:<input type="text" /></h6>
         </div>
         <div class="form-section1">
-          <p>Registered Name:<input type="text" /></p>
-          <p>TIN:<input type="text" /></p>
-          <p>Business Address :<input type="text" /></p>
+          <p class="info">Registered Name:<input type="text" /></p>
+          <p class="info">TIN:<input type="text" /></p>
+          <p class="info">Business Address :<input type="text" /></p>
         </div>
 
         <div class="table-responsive">
@@ -269,10 +494,10 @@
             </div>
           </div>
 
-          <div class="text-end mt-4 no-print">
-            <button onclick="window.print()" class="btn btn-secondary">Print Invoice</button>
-          </div>
-     
+        <div class="text-center mt-1">
+          <button onclick="window.print()" class="btn btn-secondary">Print Invoice</button>
+        </div>
+      </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
