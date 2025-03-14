@@ -309,10 +309,17 @@
       <h6 class="section-title">SOLD TO:<input type="text" /></h6>
     </div>
     <div class="form-section1">
-      <p class="info">Registered Name:<input type="text" /></p>
-      <p class="info">TIN:<input type="text" /></p>
-      <p class="info">Business Address :<input type="text" /></p>
+      <p class="info" style="display: flex; width: 100%;">
+        <span style="flex-basis: 85px;">Registered Name:</span><input type="text" />
+      </p>
+      <p class="info" style="display: flex; width: 100%;">
+        <span style="flex-basis: 85px;">TIN:</span><input type="text" />
+      </p>
+      <p class="info" style="display: flex; width: 100%;">
+        <span style="flex-basis: 85px;">Business Address:</span><input type="text" />
+      </p>
     </div>
+
 
     <div class="table-responsive">
       <table class="table table-bordered">
