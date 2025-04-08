@@ -5,9 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sales Invoice Form</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
       font-family: "calibri";
@@ -21,25 +19,74 @@
         visibility: hidden !important;
         /* Hide everything */
       }
-
+      .date {
+        margin-top: 20px !important;
+      }
+      .soldto {
+        margin-left: -150px !important;
+        margin-top: 5px !important;
+      }
+      .rn , .tin , .ba {
+        font-size: 13px !important;
+        font-weight: bolder !important;
+        margin-left: -150px !important;
+        width: 100%!important;
+      }
       input[type="text"] {
         visibility: visible !important;
         background: transparent !important;
         box-shadow: none !important;
         outline: none !important;
         color: black !important;
+        text-align: center !important;
+      
       }
-
+      .form-section1{
+        margin-bottom: 10px!important;
+        margin-left: 3px !important;
+      }
       input[type="checkbox"] {
         visibility: visible !important;
         border: none !important;
       }
-
+      table{
+        text-align: right !important;
+        margin-top: 15px!important;
+        line-height: 190% !important;
+        margin-left: 3px !important;
+      }
+      .table2{
+        text-align: center !important;
+        margin-left: 31% !important;
+        line-height: 80%!important;
+        margin-top: -20px!important;
+      }
+      .table1{
+        margin-top: -19.5px!important;
+        text-align: center !important;
+        margin-left: 5%!important;
+      }
+      .col-md-6{
+        margin-top:-10px!important;
+      
+      }
+      .total {
+        margin-top:-5px !important;
+        margin-bottom: 5px !important;
+      }
+      .tax{
+        margin-top:-5px !important;
+      }
       @page {
         margin: 0 !important;
+        size: 80mm;
       }
+
     }
 
+    p {
+      margin-top: .5rem;
+    }
 
     .invoice-container {
       background: white;
@@ -114,9 +161,9 @@
       content: "";
       position: absolute;
       right: 0;
-      top: -2px;
+      top: -9px;
       width: 1px;
-      height: 20px;
+      height: 26px;
       background-color: #000;
     }
 
@@ -138,7 +185,7 @@
     .form-section1 {
       border: 1px solid #000;
       padding: 10px;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .section-title {
@@ -180,7 +227,7 @@
     /* VAT Sales Section Enhancements */
     .vat-sales-table td,
     .vat-sales-table th {
-      height: 1cm;
+      height: 0.5cm;
       text-align: right;
       vertical-align: middle;
       border: 1.5px solid #000;
@@ -211,6 +258,13 @@
     }
 
     .table1 {
+      margin-top: 14px;
+      text-align: right;
+      font-size: 11px;
+      width: 55%;
+    }
+    .table1 {
+      margin-top: 14px;
       text-align: right;
       font-size: 11px;
       width: 55%;
@@ -222,6 +276,7 @@
     }
 
     .table2 {
+      margin-top: 14px;
       margin-left: 20%;
       text-align: right;
       font-size: 11px;
@@ -255,6 +310,7 @@
       font-size: 11px;
       border: none;
       outline: none;
+      text-align: center;
     }
 
     .form-control,
@@ -263,9 +319,11 @@
       border: none;
       outline: none;
       height: 0.5cm;
-      width: 70%;
-      font-family: "Calibri";
-      font-size: 11px;
+      width: 80%;
+      line-height: 1.6;
+      font-family: "Arial";
+      letter-spacing: 1px;
+      font-size: 12px;
     }
 
     .info {
@@ -301,22 +359,30 @@
 
       <div class="col-md-4 date-box ">
         <label for="date">Date:</label>
-        <input type="text" id="date" />
+        <input type="text" id="date" class="date"  style="
+    margin-top: 5px;    width: 70% !important;
+" class="date">
       </div>
     </div>
 
     <div class="form-section">
-      <h6 class="section-title">SOLD TO:<input type="text" /></h6>
+      <h6 class="section-title">SOLD TO:<input type="text"  style="
+           margin-top: 5px;
+    margin-left: 20px;
+" class="soldto"></h6>
     </div>
     <div class="form-section1">
       <p class="info" style="display: flex; width: 100%;">
-        <span style="flex-basis: 85px;">Registered Name:</span><input type="text" />
+        <span style="flex-basis: 85px;">Registered Name:</span><input type="text"
+           class="rn" />
       </p>
       <p class="info" style="display: flex; width: 100%;">
-        <span style="flex-basis: 85px;">TIN:</span><input type="text" />
+        <span style="flex-basis: 85px;">TIN:</span><input type="text" 
+          class="tin" />
       </p>
       <p class="info" style="display: flex; width: 100%;">
-        <span style="flex-basis: 85px;">Business Address:</span><input type="text" />
+        <span style="flex-basis: 85px;">Business Address:</span><input type="text"
+           class="ba">
       </p>
     </div>
 
@@ -333,106 +399,106 @@
         </thead>
         <tbody>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
-            <td><input type="text" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
         </tbody>
       </table>
@@ -445,19 +511,19 @@
           <tbody>
             <tr>
               <td>VATable Sales</td>
-              <td><input type="text" /></td>
+              <td><input type="text"  class="vatsales" /></td>
             </tr>
             <tr>
               <td>VAT</td>
-              <td><input type="text" /></td>
+              <td><input type="text"  class="vat" /></td>
             </tr>
             <tr>
               <td>Zero-Rated Sales</td>
-              <td><input type="text" /></td>
+              <td><input type="text"  class="zero" /></td>
             </tr>
             <tr>
               <td>VAT-Exempt Sales</td>
-              <td><input type="text" /></td>
+              <td><input type="text"  class="vatex" /></td>
             </tr>
           </tbody>
         </table>
@@ -486,47 +552,59 @@
           <tbody>
             <tr>
               <td>Total Sales (VAT Inclusive)</td>
-              <td><input type="text" /></td>
+               <td><input type="text"  class="vatinc" /></td>
             </tr>
             <tr>
               <td>Less: VAT</td>
-              <td><input type="text" /></td>
+               <td><input type="text"  class="lessvat" /></td>
             </tr>
             <tr>
               <td>Amount: Net of VAT</td>
-              <td><input type="text" /></td>
+               <td><input type="text"  class="netvat" /></td>
             </tr>
             <tr>
-              <td>Less: Discount (SC/PWD/NAAC/MOV/VBP)</td>
-              <td><input type="text" /></td>
+              <td style="
+    text-wrap-mode: nowrap;
+    font-size: 8px;
+">Less: Discount (SC/PWD/NAAC/MOV/VBP)</td>
+               <td><input type="text"  class="less" /></td>
             </tr>
             <tr>
               <td>Add: VAT</td>
-              <td><input type="text" /></td>
+               <td><input type="text"  class="addvat" /></td>
             </tr>
             <tr>
               <td>Less: Withholding Tax</td>
-              <td><input type="text" /></td>
+               <td><input type="text"  class="tax" /></td>
             </tr>
             <tr>
               <th>TOTAL AMOUNT DUE</th>
-              <th><input type="text" /></th>
+              <th><input type="text"  class="total" style="
+    font-size: 13px;
+    font-weight: bolder;
+"></th>
             </tr>
           </tbody>
         </table>
         <br>
-        <p class="small mb-0" style="text-align: right;">
-        <table class="table2 ">
+
+        <table class="table2 " style="margin-top: -7px!important;">
           <tbody>
             <tr>
-              <td> SC/PWD/NAAC/MOV
+              <td style="
+    text-wrap-mode: nowrap;
+    font-size: 8px;
+"> SC/PWD/NAAC/MOV
                 Solo Parent ID No.:</td>
-              <td style="border: 1px solid #000;"><input type="text" /></td>
+              <td style="border: 1px solid #000;"><input type="text"  class="solo" /></td>
             </tr>
             <tr>
-              <td>SC/PWD/NAAC/MOV
+              <td style="
+    text-wrap-mode: nowrap;
+    font-size: 8px;
+">SC/PWD/NAAC/MOV
                 Signature:</td>
-              <td style="border: 1px solid #000;"><input type="text" /></td>
+              <td style="border: 1px solid #000;"><input type="text"  class="sign" /></td>
             </tr>
         </table>
 
