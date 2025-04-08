@@ -359,14 +359,14 @@
 
       <div class="col-md-4 date-box ">
         <label for="date">Date:</label>
-        <input type="text" id="date" class="date" value="28/04/2024" style="
+        <input type="text" id="date" class="date"  style="
     margin-top: 5px;    width: 70% !important;
 " class="date">
       </div>
     </div>
 
     <div class="form-section">
-      <h6 class="section-title">SOLD TO:<input type="text" value="2340385922293284213232321323312" style="
+      <h6 class="section-title">SOLD TO:<input type="text"  style="
            margin-top: 5px;
     margin-left: 20px;
 " class="soldto"></h6>
@@ -374,15 +374,15 @@
     <div class="form-section1">
       <p class="info" style="display: flex; width: 100%;">
         <span style="flex-basis: 85px;">Registered Name:</span><input type="text"
-          value="2340385922293284213232321323312" class="rn" />
+           class="rn" />
       </p>
       <p class="info" style="display: flex; width: 100%;">
-        <span style="flex-basis: 85px;">TIN:</span><input type="text" value="2340385922293284213232321323312"
+        <span style="flex-basis: 85px;">TIN:</span><input type="text" 
           class="tin" />
       </p>
       <p class="info" style="display: flex; width: 100%;">
         <span style="flex-basis: 85px;">Business Address:</span><input type="text"
-          value="2340385922293284213232321323312" class="ba">
+           class="ba">
       </p>
     </div>
 
@@ -399,106 +399,106 @@
         </thead>
         <tbody>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
           <tr>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="10" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
-            <td><input type="text" value="2340385922293284213232321323312" class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
+            <td><input type="text"  class="onerow" /></td>
           </tr>
         </tbody>
       </table>
@@ -511,19 +511,19 @@
           <tbody>
             <tr>
               <td>VATable Sales</td>
-              <td><input type="text" value="23403859" class="vatsales" /></td>
+              <td><input type="text"  class="vatsales" /></td>
             </tr>
             <tr>
               <td>VAT</td>
-              <td><input type="text" value="23403859" class="vat" /></td>
+              <td><input type="text"  class="vat" /></td>
             </tr>
             <tr>
               <td>Zero-Rated Sales</td>
-              <td><input type="text" value="23403859" class="zero" /></td>
+              <td><input type="text"  class="zero" /></td>
             </tr>
             <tr>
               <td>VAT-Exempt Sales</td>
-              <td><input type="text" value="23403859" class="vatex" /></td>
+              <td><input type="text"  class="vatex" /></td>
             </tr>
           </tbody>
         </table>
@@ -552,34 +552,34 @@
           <tbody>
             <tr>
               <td>Total Sales (VAT Inclusive)</td>
-               <td><input type="text" value="23403859" class="vatinc" /></td>
+               <td><input type="text"  class="vatinc" /></td>
             </tr>
             <tr>
               <td>Less: VAT</td>
-               <td><input type="text" value="23403859" class="lessvat" /></td>
+               <td><input type="text"  class="lessvat" /></td>
             </tr>
             <tr>
               <td>Amount: Net of VAT</td>
-               <td><input type="text" value="23403859" class="netvat" /></td>
+               <td><input type="text"  class="netvat" /></td>
             </tr>
             <tr>
               <td style="
     text-wrap-mode: nowrap;
     font-size: 8px;
 ">Less: Discount (SC/PWD/NAAC/MOV/VBP)</td>
-               <td><input type="text" value="23403859" class="less" /></td>
+               <td><input type="text"  class="less" /></td>
             </tr>
             <tr>
               <td>Add: VAT</td>
-               <td><input type="text" value="23403859" class="addvat" /></td>
+               <td><input type="text"  class="addvat" /></td>
             </tr>
             <tr>
               <td>Less: Withholding Tax</td>
-               <td><input type="text" value="23403859" class="tax" /></td>
+               <td><input type="text"  class="tax" /></td>
             </tr>
             <tr>
               <th>TOTAL AMOUNT DUE</th>
-              <th><input type="text" value="23403859" class="total" style="
+              <th><input type="text"  class="total" style="
     font-size: 13px;
     font-weight: bolder;
 "></th>
@@ -596,7 +596,7 @@
     font-size: 8px;
 "> SC/PWD/NAAC/MOV
                 Solo Parent ID No.:</td>
-              <td style="border: 1px solid #000;"><input type="text" value="23403859" class="solo" /></td>
+              <td style="border: 1px solid #000;"><input type="text"  class="solo" /></td>
             </tr>
             <tr>
               <td style="
@@ -604,7 +604,7 @@
     font-size: 8px;
 ">SC/PWD/NAAC/MOV
                 Signature:</td>
-              <td style="border: 1px solid #000;"><input type="text" value="23403859" class="sign" /></td>
+              <td style="border: 1px solid #000;"><input type="text"  class="sign" /></td>
             </tr>
         </table>
 
