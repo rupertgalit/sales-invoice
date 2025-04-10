@@ -336,7 +336,7 @@
   <div class="invoice-container">
     <div class="invoice-header">
       <div>
-        <img src="/assets/images/NGSI_logo.jpg" alt="Company Logo" style="height: 125px" />
+        <img src=" NGSI_logo.jpg" alt="Company Logo" style="height: 125px" />
       </div>
       <div class="company-details">
         <h2>NETGLOBAL SOLUTIONS, INC.</h2>
